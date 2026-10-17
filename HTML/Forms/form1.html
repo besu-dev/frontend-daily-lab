@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="">
+        <h2>student registration form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+        <label for="hobby1">Reading</label>
+        <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+        <label for="hobby2">Traveling</label>
+        <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+        <label for="hobby3">Sports</label><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" list="countries" required>
+        <datalist id="countries">
+            <option value="Ethiopia">
+            <option value="Kenya">
+            <option value="UK">
+            <option value="USA">
+        </datalist> <br><br>
+
+        <label for="picture">Profile Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*"><br><br>
+        <!-- accept attribute specifies the types of files that the server accepts example: image/*,video/*,audio/*, -->
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#2f5fff"><br><br>
+        <label for="range">Select a range:</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+        <label for="url">Website:</label>
+        <input type="url" id="url" name="url" required><br><br>
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search"><br><br>
+        <label for="time">Select a time:</label>
+        <input type="time" id="time" name="time"><br><br>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"><br><br>
+        <label for="month">Select a month:</label>
+        <input type="month" id="month" name="month"><br><br>
+        <label for="number">Select a number:</label>
+        <input type="number" id="number" name="number" ><br><br>
+        <input type="reset" id="reset" name="reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
