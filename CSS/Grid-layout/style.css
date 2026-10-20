@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  background-color: tomato;
+  grid-template-rows: 100px 200px;
+  grid-template-columns: 1fr 2fr 3fr;
+}
+/* to create rows in grid use grid-template-rows */
+/* to create columns in grid use grid-template-columns */
+/* fr = fraction of available space */
+/* if  columns of grid are equal, you can use repeat() function with number of times to repeat e.g grid-template-columns: repeat(3, 1fr); */
