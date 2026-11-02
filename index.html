@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .logo{
+            color:tomato;
+            font-size: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid gray;
+            height: 60px;
+            border-radius: 20px;
+            padding:0 30px;
+            color: aliceblue;
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+ li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+main{
+    vertical-align: center;
+    text-align: center;
+}
+
+main{
+    margin-top: 20px;
+    font-size: 30px;
+    color: tomato;
+    height:100vh
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+    .nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }       }
+
+    /*meadia queries is CSS technique which used to make responsive webs based on the different screen size of the device.  then used for applying diff styles for different screen sizes.
+     */
+
+     /* media queries syntax @media(feature: value) {  some specific styles for the specific screen size  or feature }  */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">Besufikad</div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <h2>Welcom to my Website</h2>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
